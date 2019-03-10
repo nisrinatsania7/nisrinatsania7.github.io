@@ -1,16 +1,186 @@
 <!DOCTYPE html>
 <html>
-</head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("img/IMG_20180610_220605.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
 <body>
-	<style type="text/css">body{background-color: #ffcccc} h1	{font-family: "comic sans MS"}</style>
-	<link rel="stylesheet"href="./Documents/ica.css"/>
-<h1>Tentang Saya</h1>
-<h2>Biodata</h2>
-	<h3>Nama : Nisrina Putri Tsania</h3>
-	<h3>TTl : Bogor, 07 November 2002</h3>
-	<h3>Alamat :Cibinong City</h3>
-	<h3>Agama:Islam</h3>
-<h2>Deskripsi</h2>
-	<P>Saya biasa dipanggil Ica atau caca.Aku bersekolah di smakbo, sebenernya aku ingin bersekolah di sekolah hukum namun pada akhirnya saya lebih memilih bersekolah di smkbo walaupun keinginan untuk sekolah hukum masih ada. Dan seperti yang kalian tau hobi saya adalah travelling dan nonton film di bioskop <img src="4508_0.jpg"><img src="nisrina-11.6-hobiku traveling.png">
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">RECOMMEND</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">Fin</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">hey hey whatsapp~~</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">my<br>Blog</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">26 Feb 2019</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT ME</span></h5>
+    <p>My name is Nisrina Putri Tsania, I was born in Bogor on November 7th 2002. I study at SMAKBo, and i live in boarding house. My idol is Clairine Clay, and my hobbies are listening music, reading books and watching movies in theatre</p>
+    <p>I have one brother, he college in the final semester 7. My brother college in Pakuan University Bogor.</p>
+    <img src="Birthday Party My bestfriend in junior highschool.JPEG" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Date:</strong> 27/01/19.</p>
+    <p><strong>Event:</strong> Birthday Party my bestfriend </p>
+  </div>
+</div>
+ <img src="pelantikan pramuka 2019.JPEG" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Date:</strong> 19/01/19.</p>
+    <p><strong>Event:</strong> pelantikan pramuka 2019 </p>
+  </div>
+</div>
+<img src="Upacara HUT RI th.2018 with my chairmate.JPEG" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Date:</strong> 17/07/18.</p>
+    <p><strong>Event:</strong> My Dearest chairmate </p>
+  </div>
+</div>
+<img src="second home in my heart.JPEG" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Date:</strong> 15/12/18.</p>
+    <p><strong>Event:</strong> Rumah kedua dihatiku </p>
+  </div>
+</div>
+<img src="Humas SOC th.2019.JPEG" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Date:</strong> 24/02/19.</p>
+    <p><strong>Event:</strong> Panitia Humas SOC 2019 </p>
+  </div>
+</div>
+<img src="love of my life.JPEG" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Date:</strong> 15/12/18.</p>
+    <p><strong>Event:</strong> Salah Satu Cinta Dalam Hidupku </p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">RECOMMEND</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Songs');" id="myLink">
+        <div class="w3-col s6 tablink">Songs</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Movies');">
+        <div class="w3-col s6 tablink">Books</div>
+      </a>
+    </div>
+
+    <div id="Songs" class="w3-container menu w3-padding-48 w3-card">
+      <h5>L-O-V-E</h5>
+      <p class="w3-text-grey">American Pop song that sung by Nat King Cole, tells about this song is a song that is quite simple and intends to define what love means. But in my opinion, this song is not enough to define this complicated word, part of lyrics: "... Take my heart and please don't break it, Love was made for me and you."</p><br>
+    
+      <h5>CINTA</h5>
+      <p class="w3-text-grey">Part of lyrics: "Genggamlah daku kini juga nanti,
+      Harapan di hatiku bawalah diriku slamanya"</p><br>
+    
+      <h5>You Belong with Me</h5>
+      <p class="w3-text-grey">Pop-Country song by Taylor Swift, tells about a girl who understand and on her crush's side more than his girlfiend, part of lyrics: "I'm the one who make you laugh ... And I know your favorites songs An you tell me about your dreams"</p><br>
+    
+      <h5>Rahasia Cintaku</h5>
+      <p class="w3-text-grey">Indonesian song that sung by Kahitna, tells about someone who secretly love their crush, but sometimes they confused wether they love or just being sensitive, part of lyrics: "My love is only for you if you relize that, if your love is not me, let this love will become the secret of my herat"</p><br>
+    
+      <h5>One In a Million</h5>
+      <p class="w3-text-grey">Korean song that sung by Twice, tells about motivate to the listener that they're special, part of lyrics: " You're the only one in the world, You're masterpiece, You're perfect the way you are"</p>
+    </div>
+
+    <div id="Movies" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Captain Marvel</h5>
+      <p class="w3-text-grey">Tells about Captain Marvel is an extraterrestrial Kree warrior who finds herself caught in the middle of an intergalactic battle between her people and the Skrulls. Living on Earth in 1995, she keeps having recurring memories of another life as U.S. Air Force pilot Carol Danvers. With help from Nick Fury, Captain Marvel tries to uncover the secrets of her past while harnessing her special superpowers to end the war with the evil Skrulls. Release Date:  March 6, 2019 </p><br>
+    
+      <h5>AVENGERS: INFINITY WAR</h5>
+      <p class="w3-text-grey">Tells about Iron Man, Thor, the Hulk and the rest of the Avengers unite to battle their most powerful enemy yet -- the evil Thanos. On a mission to collect all six Infinity Stones, Thanos plans to use the artifacts to inflict his twisted will on reality. The fate of the planet and existence itself has never been more uncertain as everything the Avengers have fought for has led up to this moment.Release date: April 25, 2018 (Indonesia). </p><br>
+    
+      <h5>The Curiousity House: A Quite Place</h5>
+      <p class="w3-text-grey">Tells about If they hear you, they hunt you. Release Date: 3, 2018 (Indonesia)</p><br>
+    </div>  s
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Fin</span></h5>
+    <p><span class="w3-tag">FYI!</span> If you want to recommend me some songs or movies, let me know it~~.</p>
+    <p><strong>Comment!</strong> please let me know your opinion about my Blog by send me a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
 </body>
-<html
+</html>
+
